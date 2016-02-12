@@ -1,0 +1,99 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px 0px 10px 0px;
+}
+
+.inline {
+  display: inline !important;
+}
+
+header {
+  position: fixed;
+  display: block;
+  height: 50px;
+  background: #9cf;
+  min-width: 100%;
+  padding: 0px 10px;
+  font-size: 2em;
+}
+
+.hidden {
+    display:none;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    font-size: 1.5em;
+  }
+
+  .progress-bar {
+    display: none;
+  }
+
+  section.form {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .company-page {
+    display: none;
+  }
+
+  .company-name {
+    display: block;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  section.form {
+    font-size: 1em;
+  }
+
+  .company-name {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  section.form {
+    padding-top: 100px;
+  }
+}
+
+section {
+  padding: 0px 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.company-page {
+  float: right;
+  margin-right: 20px;
+}
+
+section.form input {
+  display: block;
+  font-size: 1em;
+}
+
+.progress-bar-section {
+  position: fixed;
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background: #fc9;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
