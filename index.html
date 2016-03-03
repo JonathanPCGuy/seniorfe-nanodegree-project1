@@ -18,20 +18,86 @@
     
     <!-- sign up - user/password-->
     <section class="sign-up">
+        <form id="signUpForm">
+            <label>Name
+                <input type="text" required>
+            </label>
+            <label>Password
+                <input type="password" required>
+            </label>
+            <label>Confirm password
+                <input type="password" required>
+            </label>
+        </form>
     </section>
     <!-- sign in - user/pass, below should maybe go in navbar? -->
     <section class="sign-in">
+        <form id="sign-in-form">
+            <label>Name
+                <input type="text" required>
+            </label>
+            <label>Password
+                <input type="password" required>
+            </label>
+        </form>
     </section>
     <!-- see events from others-->
     <section class="events">
+        <!-- show limited set of fields, which web framework?-->
     </section>
     <section class="single-event-view">
+        <!-- todo: look at web framework to make load, edit, view weaiser-->
     </section>
     <!-- only you can edit the events -->
     <!-- same form used for edit and create -->
     <section class="single-event-edit">
+        <!-- first get it added without validation-->
+        <!--
+            Name
+Email address
+Secure password (with character and length requirements)
+Optional public biographical information (such as employer, job title, birthday, etc)
+2) The app should allow users to create a new event. Each event should, at a minimum, allow a user to set:
+
+Name of the event
+Type of the event (birthday party, conference talk, wedding, etc.)
+Event host (could be an individual’s name or an organization)
+Event start date and time
+Event end date and time
+Guest list
+Location
+Optional message to the guests with additional information about the event
+            -->
+            
+            <form id="event-form">
+                <label>Event Name
+                    <input type="text" required>
+                </label>
+                <label>Type of Event
+                    <input type="text" required>
+                </label>
+                <label>Location
+                    <!-- auto-search here?-->
+                    <input type="text" required name="location" id="location-field">
+                </label>
+                <label>Start Date/Time
+                    <!-- todo: polyfill or way to not do text input-->
+                    <input type="datetime-local" required name="startTime">
+                </label>
+                <label>End Date/Time
+                    <input type="datetime-local" required name="endTime">
+                </label>
+                <label>Message to guests
+                    <!-- how to set to multiline? -->
+                    <textarea form="event-form"></textarea>
+                </label>
+                <label>Guest List
+                    <!-- needs to be a list control with edit/remove option, bind to a list of sorts -->
+                </label>
+                <input id="submit" type="submit">
+            </form>
     </section>
     
 </body>
-
+<script src="js/app.js"></script>
 </html>
