@@ -3,6 +3,14 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
+body main .display-section{
+    display: none;
+}
+
+body main .active {
+    display: block;
+}
+
 .inline {
   display: inline !important;
 }
